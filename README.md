@@ -1,6 +1,6 @@
 # practical16
 
-Aim: NLP Techniques on Text Data in Python
+Aim: To implement core Natural Language Processing (NLP) preprocessing steps using the NLTK library, including Tokenization, Stemming, Lemmatization, and POS Tagging.
 
 Theory:
 
@@ -25,6 +25,26 @@ df.info(): Provides a concise summary of the DataFrame, including data types, no
 df.describe(): Generates basic descriptive statistics (like mean, count, and standard deviation) for the numerical columns in the dataset.
 
 print(df): Outputs the contents of the DataFrame to the console for inspection.
+
+Environment Setup: Download necessary NLTK datasets (punkt, stopwords, wordnet, averaged_perceptron_tagger).
+
+Tokenization:
+
+1.Split the string into a list of words using word_tokenize.
+
+2.Split the paragraph into individual sentences using sent_tokenize.
+
+3.Cleaning: Filter out tokens that exist in the NLTK English stopword list to reduce noise.
+
+4.Morphological Reduction:
+
+5.Apply the Porter Stemmer to reduce words to their stems.
+
+Apply the WordNet Lemmatizer to find accurate dictionary roots.
+
+Syntactic Analysis: Use pos_tag to label each word with its Part-of-Speech tag (e.g., NNP for Proper Noun, VBZ for Verb).
+
+6.Frequency Analysis: Utilize FreqDist to calculate and display the occurrences of each word to identify the most dominant terms in the text.
 
 Conclusion:
 
